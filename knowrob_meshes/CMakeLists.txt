@@ -12,10 +12,10 @@ project(knowrob_meshes)
 find_package(catkin REQUIRED rosjava_build_tools knowrob_common knowrob_vis knowrob_mongo knowrob_cram)
 
 # Set the gradle targets you want catkin's make to run by default, e.g.
-#   catkin_rosjava_setup(installApp)
+#   catkin_rosjava_setup(installDist)
 # Note that the catkin_create_rosjava_xxx scripts will usually automatically
 # add tasks to this for you when you create subprojects.
-catkin_rosjava_setup(installApp publishMavenJavaPublicationToMavenRepository writeClasspath)
+catkin_rosjava_setup(installDist publishMavenJavaPublicationToMavenRepository writeClasspath)
 
 catkin_package(
   DEPENDS knowrob_mongo
